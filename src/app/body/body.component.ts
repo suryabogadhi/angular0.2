@@ -7,16 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BodyComponent implements OnInit {
 
-  string1 = "This is a paragaraph";
-
   constructor() { }
 
   ngOnInit() {
   }
+  string1 = 'angular app';
+  item = 'this is surya prakash';
+  angularLogo = 'http://suryaa.me/assets/images/bg/bg.jpg';
 
-  buttonClicked(){
-    this.string1 = "good";
-    console.log("This button is clicked!");
+  getmsz(){
+     this.item = 'angular item';
+     console.log('hai');
+
   }
 
   onDataEntered(event: Event){
@@ -24,4 +26,5 @@ export class BodyComponent implements OnInit {
     console.log((<HTMLInputElement>event.target).value);
   }
 
+  
 }

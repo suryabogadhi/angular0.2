@@ -1,7 +1,9 @@
+<app-body1></app-body1>
+
 <div class="row">
   <div class="col-lg-6 form-group">
     <h5>String Interpolation</h5>
-    
+
   </div>
   <div class="col-lg-6">
       <p>{{item}}</p>
@@ -21,8 +23,8 @@
     <p innerText="{{ angularLogo }}"></p>
     <p bind-innerText="angularLogo"></p>
 
-    <input type="text" name="" id=""  class="form-control" [value]="angularLogo" value="">
-    
+    <input type="text" name="" id=""  class="form-control" [value]="angularLogo">
+    <!--  value="{{angularLogo}}"-->
   </div>
 </div>
 
@@ -41,9 +43,16 @@
   <div class="col-lg-6">
    <h5>One/two way binding</h5>
   </div>
-  <div class="col-lg-6"> 
-      <input type="text" name="" id="" class="form-control" (input)="onDataEntered($event)" [(ngModel)]="string1">
-      <input type="text" class="form-control" [(ngModel)]="string1" (input)="onDataEntered($event)">
+  <div class="col-lg-6">
+    <input type="text" name="" id="" class="form-control" (input)="onDataEntered1($event)" >
+    <input type="text" name="" id="" class="form-control" (input)="onDataEntered2($event)" >
+    <input type="text" name="" id="" class="form-control" (input)="onDataEntered3($event)" >
+      <!--<input type="text" class="form-control" [(ngModel)]="string1" (input)="onDataEntered($event)">-->
+    <button (click)="showInfo()" class="btn btn-primary">Show Info</button>
+
+    <p>{{personDetails.name}}</p>
+    <p>{{personDetails.age}}</p>
+    <p>{{personDetails.branch}}</p>
   </div>
 </div>
 

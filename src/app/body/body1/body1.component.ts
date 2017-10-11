@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-body1',
   templateUrl: './body1.component.html',
   styleUrls: ['./body1.component.css']
-})
+})  
 export class Body1Component implements OnInit {
 
   students = [
@@ -13,7 +13,7 @@ export class Body1Component implements OnInit {
     {name:"teja",age:52}
   ];
 
-  myCount = Array(1000).fill(0).map((x,a)=>a);
+  //myCount = Array(1000).fill(0).map((x,a)=>a);
 
   name = "";
   age  = null;

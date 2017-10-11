@@ -12,24 +12,37 @@
   <div>{{status}}</div>
 </ng-template>
 <ng-template #stmt2>
-  <div>{{status}}</div>
+  <div>{{status}}</div>   
 </ng-template>
 
+<ul>
+  <li *ngFor="let student of students;">
+    <div *ngIf="student.age>50">{{student.name}} {{ student.age }}</div>
+  </li>
+</ul>
+
+
+<!--
 <ul>
   <li *ngFor="let student of students; let i of index">
     <div *ngIf="student.age>50">{{i}} {{student.name}} {{ student.age }}</div>
   </li>
 </ul>
+-->
 
 
+
+<!--
 <ul>
   <li *ngFor="let index of myCount;">
     <div>Hello</div>
   </li>
 </ul>
-
+--> 
 <div class="col-sm-12"></div>
 <div class="clearfix"></div>
+<br>
+<br>
 <hr>
 
 

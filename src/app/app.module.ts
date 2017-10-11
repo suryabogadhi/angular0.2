@@ -8,6 +8,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
 import { BodyComponent } from './body/body.component';
 import { Body1Component } from './body/body1/body1.component';
+import { Body2Component } from './body/body2/body2.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { Body1Component } from './body/body1/body1.component';
     SidebarComponent,
     FooterComponent,
     BodyComponent,
-    Body1Component
+    Body1Component,
+    Body2Component
   ],
   imports: [
     BrowserModule,

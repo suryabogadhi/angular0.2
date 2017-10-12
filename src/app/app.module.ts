@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule} from "@angular/forms";
+import { FormsModule } from "@angular/forms";
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -9,6 +9,8 @@ import { FooterComponent } from './footer/footer.component';
 import { BodyComponent } from './body/body.component';
 import { Body1Component } from './body/body1/body1.component';
 import { Body2Component } from './body/body2/body2.component';
+import { RegisterComponent } from './register/register.component';
+import { ListComponent } from './list/list.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { Body2Component } from './body/body2/body2.component';
     FooterComponent,
     BodyComponent,
     Body1Component,
-    Body2Component
+    Body2Component,
+    RegisterComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,

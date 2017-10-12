@@ -1,14 +1,17 @@
 <div class="wrapper">
   <!-- Sidebar Holder -->
   <app-sidebar  id="sidebar"></app-sidebar>
- 
+
 
   <!-- Page Content Holder -->
   <div id="content">
     <app-header></app-header>
-     
-    <app-body></app-body>
-    
+
+    <app-register (addingStudent)="mainFuncAddStudent($event)"></app-register>
+
+    <app-list [students]="studentList"></app-list>
+
+    <!--<app-body></app-body>-->
   </div>
 </div>
 

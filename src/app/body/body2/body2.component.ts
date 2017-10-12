@@ -6,11 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./body2.component.css']
 })
 
-export class Body2Component implements OnInit {
+export class Body2Component implements OnInit{
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(){
+
   }
 
   name = "";
@@ -34,13 +35,13 @@ export class Body2Component implements OnInit {
   addEmail(event:Event){
     this.email = (<HTMLInputElement>event.target).value;
     console.log(this.email);
-  
+
   }
 
   addAge(event:Event){
     this.age = (<HTMLInputElement>event.target).value;
     console.log(this.age);
-  
+
   }
 
   addPhone(event:Event){
@@ -54,7 +55,7 @@ export class Body2Component implements OnInit {
     this.studentList.push({name:this.name,email:this.email,age:this.age,phone:this.phone},)
     this.status = "Hello "+this.name+" your data is added";
     this.name  = "";
-    this.email = ""; 
+    this.email = "";
     this.age   = null;
     this.phone   = null;
     this.sts   = true;

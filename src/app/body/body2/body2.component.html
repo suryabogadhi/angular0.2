@@ -2,7 +2,11 @@
     <h2>Enter Details</h2>
     <br>
 
+
+      <!--<div *ngIf="sts">Came in</div>-->
+
       <div *ngIf="sts then ss1 else ss2"></div>
+
       <ng-template #ss1>
       <h4 style="color:rgb(61, 110, 8)">{{status}}</h4>
       </ng-template>
@@ -10,9 +14,9 @@
       <ng-template #ss2>
           <h4 style="color:rgb(221, 6, 6)">{{status}}</h4>
       </ng-template>
-    
 
-   
+
+
     <form>
 
         <div class="form-group">
@@ -34,7 +38,7 @@
             <label for="pwd">Phone:</label>
             <input type="text" class="form-control"  placeholder="Enter phone" name="phone" (input)="addPhone($event)">
         </div>
-      
+
       <button type="submit" class="btn btn-primary" (click)="addstudent()">Submit</button>
     </form>
   </div>
@@ -42,7 +46,7 @@
   <br>
 
   <div>
-      <h2>List</h2>       
+      <h2>List</h2>
       <table class="table table-bordered">
         <thead>
 
@@ -51,20 +55,20 @@
             <th>Name</th>
             <th>Email</th>
             <th>Age</th>
-            <th>Phone</th> 
+            <th>Phone</th>
           </tr>
 
         </thead>
         <tbody>
 
-          <tr *ngFor="let students of studentList; let i of index">
+          <tr *ngFor="let students of studentList; let i = index">
             <td>{{ i + 1 }}</td>
             <td>{{students.name}}</td>
             <td>{{students.email}}</td>
             <td>{{students.age}}<span *ngIf="students.age>18" style="color:green">(E)</span></td>
-            <td>{{students.phone}}</td> 
+            <td>{{students.phone}}</td>
           </tr>
-          
+
         </tbody>
       </table>
     </div>

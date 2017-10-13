@@ -12,6 +12,7 @@ import { Body2Component } from './body/body2/body2.component';
 import { RegisterComponent } from './register/register.component';
 import { ListComponent } from './list/list.component';
 import { LocalrefComponent } from './localref/localref.component';
+import { InterfacesComponent } from './interfaces/interfaces.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { LocalrefComponent } from './localref/localref.component';
     Body2Component,
     RegisterComponent,
     ListComponent,
-    LocalrefComponent
+    LocalrefComponent,
+    InterfacesComponent
   ],
   imports: [
     BrowserModule,

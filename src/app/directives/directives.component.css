@@ -1,0 +1,14 @@
+.hide{
+  display: none;
+}
+
+.show{
+  display:block;
+}
+
+.modal-show{
+  display: block;
+  padding-left: 0px;
+}
+
+

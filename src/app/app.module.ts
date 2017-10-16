@@ -13,6 +13,7 @@ import { RegisterComponent } from './register/register.component';
 import { ListComponent } from './list/list.component';
 import { LocalrefComponent } from './localref/localref.component';
 import { InterfacesComponent } from './interfaces/interfaces.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { InterfacesComponent } from './interfaces/interfaces.component';
     RegisterComponent,
     ListComponent,
     LocalrefComponent,
-    InterfacesComponent
+    InterfacesComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,

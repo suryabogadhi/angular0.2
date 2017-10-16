@@ -1,0 +1,32 @@
+<p [ngStyle]="{'background-color':getColor(),color:'#fff'}">
+  directives works!
+</p>
+<p [ngClass]="{'show':showStatus, 'hide':!showStatus}" [ngStyle]="{'background-color':'#0ff',color:'#fff'}">
+  directives works!
+</p>
+<p [ngClass]="{'show':getStatuss(), 'hide':!getStatuss()}" [ngStyle]="{'background-color':'#0ff',color:'#fff'}">
+  directives works!
+</p>
+<p [ngClass]="getStatus()">
+  directives works!
+</p>
+<button (click)="togglePara()">Toggle</button>
+
+<div id="myModal" [ngClass]="{'modal':true, 'fade':true, 'in':showStatus, 'modal-show':showStatus}" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" (click)="togglePara()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -14,6 +14,7 @@ import { ListComponent } from './list/list.component';
 import { LocalrefComponent } from './localref/localref.component';
 import { InterfacesComponent } from './interfaces/interfaces.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { CustomDirective } from './custom.directive';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { DirectivesComponent } from './directives/directives.component';
     ListComponent,
     LocalrefComponent,
     InterfacesComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    CustomDirective
   ],
   imports: [
     BrowserModule,

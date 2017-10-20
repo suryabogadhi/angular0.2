@@ -9,6 +9,7 @@ export class CustomDirective implements OnInit{
   @HostBinding('style.background') myBg = "#521df4";
   @HostBinding('style.color') myColor = "#000";
   @HostBinding('class.customclass') cClass = false;
+  // @HostBinding('disabled') cClass = true;
 
   constructor(private myElement: ElementRef, private myRenderer: Renderer2) {
     //this.myElement.nativeElement.style.background = "#ccc";

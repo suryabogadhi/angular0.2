@@ -15,6 +15,8 @@ import { LocalrefComponent } from './localref/localref.component';
 import { InterfacesComponent } from './interfaces/interfaces.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { CustomDirective } from './custom.directive';
+import { ServcompinComponent } from './servcompin/servcompin.component';
+import { ServcompoutComponent } from './servcompout/servcompout.component';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { CustomDirective } from './custom.directive';
     LocalrefComponent,
     InterfacesComponent,
     DirectivesComponent,
-    CustomDirective
+    CustomDirective,
+    ServcompinComponent,
+    ServcompoutComponent
   ],
   imports: [
     BrowserModule,

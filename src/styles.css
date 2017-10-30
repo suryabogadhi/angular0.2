@@ -167,9 +167,15 @@ a.article, a.article:hover {
     }
 }
 
-.footersec { 
+.footersec {
  background-color: #6d7fcc;
  text-align: center; color: black;
 
 }
 .footersec p { text-align: center; color: #FFFAFA; padding-top: 10px; padding-bottom:10px; }
+
+
+.navbar-default .navbar-nav>li>a.active {
+  background: #7386d4;
+  color: #fff !important;
+}

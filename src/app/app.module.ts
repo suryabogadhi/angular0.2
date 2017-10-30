@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";
+import { RouterModule, Routes} from "@angular/router";
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -20,6 +21,20 @@ import { ServcompoutComponent } from './servcompout/servcompout.component';
 import { PractserveinComponent } from './practservein/practservein.component';
 import { PractserveoutComponent } from './practserveout/practserveout.component';
 
+import {PractserviceService} from "./practservice.service";
+import {ServiceService} from "./service.service";
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { PagesComponent } from './pages/pages.component';
+import { ContactComponent } from './contact/contact.component';
+
+
+const myRoutes: Routes = [
+  { path:'',component:HomeComponent },
+  { path:'about',component:AboutComponent },
+  { path:'pages',component:PagesComponent },
+  { path:'contact',component:ContactComponent }
+];
 
 @NgModule({
   declarations: [
@@ -39,13 +54,18 @@ import { PractserveoutComponent } from './practserveout/practserveout.component'
     ServcompinComponent,
     ServcompoutComponent,
     PractserveinComponent,
-    PractserveoutComponent
+    PractserveoutComponent,
+    HomeComponent,
+    AboutComponent,
+    PagesComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(myRoutes)
   ],
-  providers: [],
+  providers: [PractserviceService,ServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

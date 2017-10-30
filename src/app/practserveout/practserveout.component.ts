@@ -9,7 +9,7 @@ import { PractserviceService } from '../practservice.service';
 export class PractserveoutComponent implements OnInit {
   studentDetails = [];
 
-  constructor(private outputpracticeout:PractserviceService) { }
+  constructor(private outputpracticeout:PractserviceService, ) { }
 
   ngOnInit() {
     this.studentDetails = this.outputpracticeout.studentDetails;
@@ -17,8 +17,8 @@ export class PractserveoutComponent implements OnInit {
 
 
   removestudent(ids){
-    console.log(ids);
-    //this.outputpracticeout.removestudentidentityid();
+    this.outputpracticeout.removestudentidentity(ids);
+
   }
 
 }

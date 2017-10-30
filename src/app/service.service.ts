@@ -1,6 +1,3 @@
-import { Injectable } from '@angular/core';
-
-@Injectable()
 export class ServiceService {
   dataList = ['a','b','c','d','e'];
   constructor() { }

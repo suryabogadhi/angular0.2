@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import {ServiceService} from "./service.service";
+import { PractserviceService } from './practservice.service';
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers:[ServiceService]
+  providers:[PractserviceService]
 })
 export class AppComponent {
   studentList = [
@@ -14,7 +15,7 @@ export class AppComponent {
     {name:"Raj",email:"raj@gmail.com",age:23,phone:7908035150}
   ];
 
-  constructor(private dataServ: ServiceService){
+  constructor(private dataServ: PractserviceService){
 
   }
 

@@ -17,6 +17,8 @@ import { DirectivesComponent } from './directives/directives.component';
 import { CustomDirective } from './custom.directive';
 import { ServcompinComponent } from './servcompin/servcompin.component';
 import { ServcompoutComponent } from './servcompout/servcompout.component';
+import { PractserveinComponent } from './practservein/practservein.component';
+import { PractserveoutComponent } from './practserveout/practserveout.component';
 
 
 @NgModule({
@@ -35,7 +37,9 @@ import { ServcompoutComponent } from './servcompout/servcompout.component';
     DirectivesComponent,
     CustomDirective,
     ServcompinComponent,
-    ServcompoutComponent
+    ServcompoutComponent,
+    PractserveinComponent,
+    PractserveoutComponent
   ],
   imports: [
     BrowserModule,

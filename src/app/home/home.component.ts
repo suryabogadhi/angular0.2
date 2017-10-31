@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  goToContact(){
+    this.router.navigate(
+      ['/about',1234,'Acer'],
+      {
+        queryParams:{'order':'up','order2':'des','order4':'ups'},
+        fragment:'getit'
+      }
+    );
   }
 
 }

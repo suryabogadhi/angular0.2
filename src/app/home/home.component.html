@@ -1,3 +1,14 @@
 <p>
   home works!
 </p>
+
+
+<button class="btn btn-primary" (click)="goToContact()">Go to contact</button>
+
+<ul class="nav nav-stacked">
+<li><a [routerLink]="['/about',123,'laptop']">Laptop</a></li>
+<li><a [routerLink]="['/about',124,'lenove']">Lenovo</a></li>
+<li><a [routerLink]="['/about',125,'mi']">Mi</a></li>
+<li><a [routerLink]="['/about',126,'iphone']">Iphone</a></li>
+<li><a [routerLink]="['/about',127,'macbook']" [queryParams]="{ order: 'popular', order2: 'popular'}" fragment="other">Macbook</a></li>
+</ul>

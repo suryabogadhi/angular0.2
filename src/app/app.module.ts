@@ -27,11 +27,14 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { PagesComponent } from './pages/pages.component';
 import { ContactComponent } from './contact/contact.component';
+import { SubComponent } from './about/sub/sub.component';
 
 
 const myRoutes: Routes = [
   { path:'',component:HomeComponent },
   { path:'about',component:AboutComponent },
+  { path:'about/:proId',component:AboutComponent },
+  { path:'about/:proId/:proName',component:AboutComponent },
   { path:'pages',component:PagesComponent },
   { path:'contact',component:ContactComponent }
 ];
@@ -58,7 +61,8 @@ const myRoutes: Routes = [
     HomeComponent,
     AboutComponent,
     PagesComponent,
-    ContactComponent
+    ContactComponent,
+    SubComponent
   ],
   imports: [
     BrowserModule,
